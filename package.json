@@ -6,11 +6,12 @@
     "dev:backend": "node src/backend/app.js",
     "dev:frontend": "cd src/frontend && next dev -p 3000",
     "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
-    "build": "cd src/frontend && next build",
+    "build": "cd src/frontend && npm install && npm run build",
     "start": "node src/backend/app.js",
-    "build:frontend": "cd src/frontend && next build",
-    "start:frontend": "cd src/frontend && next start",
-    "vercel-build": "cd src/frontend && next build"
+    "build:frontend": "cd src/frontend && npm install && npm run build",
+    "start:frontend": "cd src/frontend && npm start",
+    "vercel-build": "cd src/frontend && npm install && npm run build",
+    "install:frontend": "cd src/frontend && npm install"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",

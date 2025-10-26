@@ -1,6 +1,13 @@
 {
   "version": 2,
+  "buildCommand": "cd src/frontend && npm install && npm run build",
+  "outputDirectory": "src/frontend/.next",
+  "installCommand": "cd src/frontend && npm install",
   "builds": [
+    {
+      "src": "src/frontend/package.json",
+      "use": "@vercel/next"
+    },
     {
       "src": "src/backend/app.js",
       "use": "@vercel/node"
@@ -10,6 +17,10 @@
     {
       "src": "/api/(.*)",
       "dest": "src/backend/app.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "src/frontend/$1"
     }
   ],
   "env": {
