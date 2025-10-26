@@ -1,0 +1,16 @@
+fecha,tipo,monto,categoría,cliente_proveedor,descripción
+2025-09-01,ingreso,25000,ventas,Cliente A,Venta mensual
+2025-09-02,egreso,5000,marketing,Proveedor Ads,Campaña septiembre
+2025-09-03,egreso,8000,nómina,Equipo interno,Pago de sueldos
+2025-09-05,ingreso,18000,ventas,Cliente B,Compra al mayoreo
+2025-09-07,egreso,6000,operativos,Proveedor Renta,Renta oficina
+2025-09-08,ingreso,12000,ventas,Cliente A,Segunda compra
+2025-09-10,egreso,4000,marketing,Proveedor Ads,Campaña Facebook
+2025-09-12,egreso,7000,operativos,Proveedor Insumos,Compra de materiales
+2025-09-15,ingreso,9000,ventas,Cliente C,Venta de nuevos productos
+2025-09-17,egreso,3000,nómina,Equipo interno,Bonos de productividad
+2025-09-18,egreso,2500,operativos,Proveedor Limpieza,Servicios mensuales
+2025-09-20,ingreso,15000,ventas,Cliente D,Venta especial
+2025-09-22,egreso,8500,operativos,Proveedor Insumos,Compra adicional
+2025-09-25,ingreso,10000,ventas,Cliente E,Contrato nuevo
+2025-09-28,egreso,4500,marketing,Proveedor Ads,Campaña fin de mes

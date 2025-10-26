@@ -1,0 +1,30 @@
+{
+  "name": "hackmty-ai-finance",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev:backend": "node src/backend/app.js",
+    "dev:frontend": "cd src/frontend && next dev -p 3000",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "build": "cd src/frontend && next build",
+    "start": "node src/backend/app.js",
+    "build:frontend": "cd src/frontend && next build",
+    "start:frontend": "cd src/frontend && next start",
+    "vercel-build": "cd src/frontend && next build"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "axios": "^1.6.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^4.18.2",
+    "multer": "^1.4.5-lts.2",
+    "next": "^14.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "recharts": "^2.10.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
